@@ -5,7 +5,7 @@ function Cart(props) {
     const { items, remove } = props;
     const list = items.map((el) => {
         return (
-            <Product item={el} key={el.name + el.price} remove={remove} />
+            <Product item={el} key={el.id} remove={remove} />
         )
     })
 

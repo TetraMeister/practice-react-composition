@@ -1,5 +1,4 @@
 import React from 'react';
-import { v4 as uuid } from 'uuid';
 
 class List extends React.Component {
     render() {
@@ -7,7 +6,7 @@ class List extends React.Component {
         console.log(items)
         const list = items.map((el) => {
             return (
-                <li key={uuid()}>
+                <li key={el.id}>
                     <h3>Dane: {el.text}</h3>
                     <p>Rozmiar pliku: {el.size} Bytes</p>
                 </li>
